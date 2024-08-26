@@ -29,9 +29,11 @@ window.onload = function() {
     }
   }
 
-  for (const bio of bios) {
-    console.log(bio);
-  }
-
   //write your code here
+  const domainList = document.getElementById("domain-list");
+  for (const bio of bios) {
+    const p = document.createElement("p");
+    p.textContent = bio;
+    domainList.appendChild(p);
+  }
 };
